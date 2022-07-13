@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center fs-1">Bài tập nộp buổi 3</h1>
+    </header>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center fs-2">Bài 1:Tính tiền lương</h2>
+          <div class="form-group">
+            <p>So ngay</p>
+            <input class="form-control" id="days" />
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button
+              class="btn btn-primary mt-2"
+              type="button"
+              id="btnCountSalary"
+            >
+              Tinh Tien
+            </button>
+          </div>
+          <div class="mt-2" id="showSalary"></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center fs-2">Tính tiền từ thiện và tổng</h2>
+          <div class="form-group">
+            <p>Tên phim</p>
+            <input class="form-control" id="nameMovies" />
+          </div>
+          <div class="form-group">
+            <p>Giá vé người lớn</p>
+            <input class="form-control" id="adultCost" />
+          </div>
+          <div class="form-group">
+            <p>Số vé người lớn</p>
+            <input class="form-control" id="adultNumber" />
+          </div>
+          <div class="form-group">
+            <p>Giá vé trẻ em</p>
+            <input class="form-control" id="kidCost" />
+          </div>
+          <div class="form-group">
+            <p>Số vé trẻ em</p>
+            <input class="form-control" id="kidNumber" />
+          </div>
+
+          <label class="form-group"> Phần trăm từ thiện</label>
+          <select class="form-control" id="percent">
+            <option value="30">30%</option>
+            <option value="20">20%</option>
+            <option value="15">15%</option>
+            <option value="10">10%</option>
+            <option value="5">5%</option>
+          </select>
+
+          <button
+            class="btn btn-primary mt-2"
+            type="button"
+            id="btnCountCharity"
+          >
+            Tinh Tien
+          </button>
+          <div class="form-group" id="showMoney"></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center">
+            Bai 2:Nhập số nguyên dương có 2 ký số, tính tổng 2 ký số
+          </h2>
+          <div class="form-group">
+            <h4>Số thực vào đây</h4>
+            <input type="text " class="form-control" id="num" />
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary mt-2" id="btnTotal">
+              Tính nào
+            </button>
+          </div>
+        </div>
+        <div class="card-footer" id="totalNum"></div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center">
+            Bai3 : Tinh chu vi dien tich hinh chu nhat
+          </h2>
+          <div class="form-group">
+            <h4>Chiều dài</h4>
+            <input type="text " class="form-control" id="horizontal" />
+          </div>
+          <div class="form-group">
+            <h4>Chiều cao</h4>
+            <input type="text " class="form-control" id="height" />
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary mt-2" id="btnCount">
+              Tính nào
+            </button>
+          </div>
+        </div>
+        <div class="card-footer" id="showStatic"></div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center fs-2">Bài 4:Quy đổi tiền đô => tiền việt</h2>
+          <div class="form-group">
+            <p>So tien muon quy doi</p>
+            <input class="form-control" id="changeMoney" />
+          </div>
+          <div class="mt-2" id="infoMoney"></div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button
+              class="btn btn-primary mt-2"
+              type="button"
+              id="btnChangeMoney"
+            >
+              Tinh Tien
+            </button>
+          </div>
+          <div class="mt-2" id="showCurrency"></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center"></div>
+        <div class="card-body">
+          <h2 class="text-center fs-2">bài2: tính trung bình 5 số nhập vào</h2>
+          <div class="form-group">
+            <p>Số đầu tiên</p>
+            <input class="form-control" id="num1" />
+          </div>
+          <div class="form-group">
+            <p>Số thứ hai</p>
+            <input class="form-control" id="num2" />
+          </div>
+          <div class="form-group">
+            <p>Số thứ ba</p>
+            <input class="form-control" id="num3" />
+          </div>
+          <div class="form-group">
+            <p>Số thứ tư</p>
+            <input class="form-control" id="num4" />
+          </div>
+          <div class="form-group">
+            <p>Số thứ 5</p>
+            <input class="form-control" id="num5" />
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button
+            class="btn btn-primary mt-2"
+            type="button"
+            id="btnAvarageNumber"
+          >
+            Tinh Tien
+          </button>
+        </div>
+        <div class="mt-2" id="showAverage"></div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
